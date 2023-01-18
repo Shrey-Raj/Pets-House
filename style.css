@@ -1,0 +1,437 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+
+  /* 'Caveat' , 'Merienda One' , 'Rock Salt' , 'Aladin' , 'Tillana' */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .navbar{
+    background:linear-gradient(#daab00c7 , #c8a00f , #daac00);
+    padding: 0 8% ;
+}
+.nav-link{
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Aladin', cursive;
+}
+.navbar-brand{
+    padding-top: 1% ;
+    padding-bottom: 1% ;
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 3px 3px 2px  black;
+}
+.navbar-brand>img{
+    margin: 0 10px;
+}
+.searchbox{
+    background-color: #fcc302;
+    color: white;
+    border: 0;
+    border-radius: 0;
+    position: relative;
+    left: 48px;
+    box-shadow: 5px 10px 11px 0px #00000021;
+}
+.searchbox::placeholder{
+    color:white;
+    letter-spacing: 2px;
+}
+.searchbtn{
+    position: relative;
+    z-index: 99;
+    background-color: #00bec9;
+    color: white;
+    border-radius: 0; border: 0;
+}
+
+@media only screen and (max-width:1000px){
+    .searchform{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        position: relative;
+        right: 50px;
+    }
+    .nav_container{
+        display: flex!important ;
+        justify-content: space-between!important;
+        
+    }
+ 
+}
+@media only screen and (max-width:500px){
+    .nav_container{
+        display: flex;
+        justify-content: space-between!important;
+        padding: 0!important ;
+    }
+ 
+}
+
+/* banner */
+.banner{
+    background: #fcc302;
+    margin: 0px ;
+    /* border: 2px solid #00bec9; */
+    
+}
+.bannertext h1{
+    color: white;
+    font-size: 70px;
+    margin-top: 100px ;
+    font-family: 'Merienda One', cursive;
+}
+.bannertext h1 span{
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 2px  #00000021;
+}
+.bannertext p{
+    color: #fff;
+    font-size: 25px;
+    margin: 2rem 0 ;
+    font-family:  'Tillana', cursive;
+    letter-spacing: 2px;
+    font-weight: 10;
+}
+
+#banner-btn-1{
+    background-color: #00bec9;
+    border:2px solid #fff;
+    color: white;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+    margin-right: 15px;
+    margin-bottom:20px;
+
+}
+#banner-btn-2{
+    border: 2px solid white;
+    color: white;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 2px;
+    background-color: #edcc5f;
+    text-shadow: 1px 1px 1px rgb(116, 114, 114);
+    margin-bottom:20px;
+}
+
+@media only screen and (min-width:900px){
+.bannerimg{
+    position: relative;
+    top: 100px;
+}
+}
+
+@media only screen and (min-width:500px) and (max-width:900px){
+.bannerimg{
+    position: relative;
+    top: 100px;
+}
+
+.bannertext h1{
+    font-size: 40px;
+}
+.bannertext p{
+    font-size: 20px;
+}
+}
+
+/* Services */
+.service{
+    background: linear-gradient(whitesmoke , rgb(242, 242, 151) , whitesmoke);
+    /* height: 100vh; */
+}
+#service-text{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+#service-btn{
+    color:white;
+    background-color: #fcc302;
+    border: 2px solid #fcc302;
+    text-shadow: 1px 1px 1px grey;
+
+}
+#service-img > img{
+    border-left:   20px solid #fcc302;
+    border-bottom :20px solid  #fcc302;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    top: 135px;
+    /* margin-bottom: 800px; */
+}
+
+
+#service-text h1 , #service-text p{
+font-family: 'Tillana', cursive;
+}
+
+#service-text h1 span{
+font-family: 'Merienda One';
+text-shadow: 1px 1px 1px yellow;
+}
+
+
+/* Counter Section  */
+
+.counter-section{
+    background:url('dog2.jpg'); 
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-position: center ;
+    background-size: cover;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    font-family:   'Merienda One' , 'Rock Salt' , 'Aladin' , 'Tillana' ; 
+}
+.counter-icon{
+font-size: 70px;
+}
+
+     /* Blog */
+
+ .blog{
+    padding-bottom: 70px;
+    padding-top: 70px;
+ }
+ .blog-title{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:  'Tillana' ;
+    letter-spacing: 2px;
+ }
+ .blog-p{
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-family:'Merienda One' , 'Rock Salt' , 'Aladin' , 'Tillana' ;
+ }
+ .article-detail{
+    padding: 15px;
+    border: 2px solid rgb(218, 218, 201);
+    box-shadow: 10px 1px 100px 1px rgb(243, 243, 153) ;
+ }
+ .article-title{
+    padding-top: 2rem;
+    font-weight: 200;
+    font-family: 'Merienda One';
+ }
+ .article-date{
+    font-family: 'Tilliana';
+    color: #00bec9;
+    font-weight: 700;
+    letter-spacing: 2px;
+ }
+ .article-desc{
+font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+ .article-detail > img{
+    border-left: 15px solid #daac00;
+    border-bottom: 15px solid #daac00;
+    border-bottom-left-radius: 50px;
+ }
+ .article-link>a{
+    color: #00bec9;
+    font-weight: 700;
+    letter-spacing: 2px;
+ }
+ .footer{
+    background-color: #343434;
+    /* padding-top: 80px; */
+    padding-bottom: 80px;
+ }
+ .footer a , .footer p{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ .footer-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative; 
+    /* left: 10px; */
+    display: flex;
+    justify-content: flex-start;
+ }
+ #footer-search-box{
+    background-color: #fcc302;
+    border: none;
+    color: white;
+    padding: 10px;
+    /* width: 100%; */
+    
+ }
+ #footer-search-submit{
+background-color: #00bec9;
+border: 0;
+padding: 10px 20px;
+/* position: absolute;
+right: 0px; */
+ }
+
+.icons i{
+    margin-left: 10px;
+}
+.footer h4{
+    color: wheat;
+    letter-spacing: 2px;
+    font-family: 'sans-serif';
+     margin-top: 10%;
+    margin-left: 10%;
+}
+.footer a , .footer-share > p , .footer-share>form , .icons{
+    margin-left: 10%;
+}
+
+/* .footer-share , .footer-services , .footer-about{
+    margin-left: 10%;
+} */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Manage Overall Responsiveness */
+
+@media only screen and (min-width:428px) and (max-width:640px){
+.bannerimg{
+    position: relative;
+    top: -21px;
+}
+.banner{
+    padding:0 0 ;
+    overflow-x: hidden;
+}
+
+.bannertext p{
+    font-size: 1.5rem;
+}
+.bannertext h1{
+    font-size: 2rem;
+}
+.bannertext h1 span {
+    font-size: 3rem;
+}
+
+.service{
+    padding: 0 60px;
+    /* border: 2px solid red; */
+}
+.service h1 span{
+    font-size: 45px;
+}
+.service p{
+    font-size: 90%;
+}
+
+#service-btn{
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+#service-img > img{
+    margin: 0 0 20% 0;
+    position: relative;
+    top: 10%;
+}
+
+.article-detail{
+    /* border: 2px solid red; */
+    padding: 10%  10% 0% 10%;
+    display: flex;
+    flex-direction: row;
+}
+.article-detail > img{
+    width: 50%;
+    height: 65%;
+    margin-right: 2rem;
+}
+.article-detail .article-title{
+font-size: 120%;
+/* padding: 0 0; */
+}
+.article-detail .article-desc{
+    display:none ; 
+}
+.one-line{
+    display:block ;
+}
+.blog-title{
+    font-size: 250%;
+}
+.blog-p{
+    font-size: 80%;
+}
+/* .footer-share , .footer-services , .footer-about{
+    padding-left: 10%;
+} */
+}
+
+@media only screen and (max-width:427px){
+    .navbar-brand{
+        font-size: 60%;
+    }
+
+    .bannertext p{
+        font-size: 50%;
+    }
+    .bannertext h1{
+        margin-top: 30%;
+        font-size: 100%;
+    }
+    .bannertext h1 span {
+        font-size: 100%;
+    }
+    .service{
+        padding: 10%;
+        padding-bottom: 0;
+    }
+    .service h1{
+        font-size: 140%;
+    }
+    .service h1 span{
+        font-size: 70%;
+    }
+    .service p{
+        font-size: 70%;
+    }
+    #service-img > img{
+        margin: 0 0 20% 0;
+        position: relative;
+        top: 10%;
+    }
+    .counter-icon{
+        font-size: 155%;
+    }
+    .article-detail .article-desc{
+        display:none ; 
+    }
+    .blog-title{
+        font-size: 250%;
+    }
+    .blog-p{
+        font-size: 80%;
+    }
+
+    #footer-search-box{
+        width: 55vw;
+    }
+}
+
